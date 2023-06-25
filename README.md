@@ -52,7 +52,7 @@ $$
 Where $F_{\mu}(n)$ is called staple:
 
 $$
-F_{\mu}(n) = \sum_{\nu \neq \mu} U_{\nu}(n)U_{\mu}(n+\mu)U_{\nu}^*(n+\mu) + U_{\nu}^*(n-\nu)U_{\mu}(n-\mu)U_{\nu}(n-\nu+\mu)
+F_{\mu}(n) = \sum_{\nu \neq \mu} U_{\nu}(n)U_{\mu}(n+\mu)U^*_{\nu}(n+\mu)+U^*_{\nu}(n-\nu)U_{\mu}(n-\mu)U_{\nu}(n-\nu+\mu)
 $$
 
 The observable to be measured is the topological charge, defined as:
