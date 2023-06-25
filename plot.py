@@ -66,7 +66,7 @@ frame1.set_title("Topological susceptibility, gauge U(1)", fontsize=15)
 plt.ylabel(r'$\chi \, a^2$', fontsize=15)
 plt.grid()
 
-
+plt.plot(BETA, BETA/(4 * np.pi**2), 'r', label=r'$\frac{1}{4 \pi \beta}$')
 plt.errorbar(1/beta, x, dx, fmt='.', color='k', label='data')
 plt.plot(BETA, f(BETA, *pars), color='blue', label='best fit') 
 plt.legend(loc='best')
