@@ -48,8 +48,8 @@ C======================================================================
 	    ax = sum(Q**2)/float(N*nvol)
 	    
 	    !computation of errors     
-          call errore(N, Q, dq, 0, R, nvol, Db)
-          call errore(N, Q, dx, 1, R, nvol, Db)
+          call bootstrap(N, Q, dq, 0, R, nvol, Db)
+          call bootstrap(N, Q, dx, 1, R, nvol, Db)
           
           close(0)
           deallocate(Q)
@@ -70,9 +70,9 @@ C=============================================================================
 C Bootstrap
 C=============================================================================
 
-	subroutine errore(N, x, dx, ics, R, nvol, Db)
+	subroutine bootstrap(N, x, dx, ics, R, nvol, Db)
 C=============================================================================
-C     Subroutine for calculating errors
+C     Subroutine for calculating errors using binned bootstrap
 C     
 C     Parameters
 C     N : int
